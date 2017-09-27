@@ -1,0 +1,14 @@
+.titleMenu{
+    background-color: bisque;
+    position: fixed;
+    top:0;
+    margin-left:0;
+    height:6%;
+    width:100%;
+    font-size:1.5em;
+    z-index: 2;
+}
+a{
+    text-decoration: none;
+    /*text-decoration-color: ;*/
+}
