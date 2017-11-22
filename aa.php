@@ -6,7 +6,7 @@
  * Time: 上午 10:11
  */
 ?>
-<<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,19 +16,23 @@
     <title>Document</title>
 </head>
 <body>
-
+<div style="max-width: 700px">
         <?php
-        for($r=0;$r<=255;$r+=22) {
-            echo "<table>";
-            for ($g = 0; $g <= 255; $g += 22) {
+        $ar=0;
+        $ag=0;
+        $ab=0;
+        for($ar=0;$ar<=255;$ar+=25) {
+            echo "<table width='700px'>";
+            for ($ag = 0; $ag <= 255; $ag += 25) {
                 echo "<tr>";
-                for ($b = 0; $b <= 255; $b += 22) {
-                    echo "<td bgcolor='rgb($r $g $b)'></td>";
+                for ($ab = 0; $ab <= 255; $ab += 25) {
+                    echo "<td style='background-color: rgb($ar,$ag,$ab);color:white'>$ar,$ag,$ab</td>";
                 }
                 echo "</tr>";
             }
             echo "</table>";
         }
         ?>
+</div>
 </body>
 </html>
